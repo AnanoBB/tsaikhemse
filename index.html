@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>იტალიური სამზარეულო</title>
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
-<!--ჰედერს აკლია "წაიხემსე" ლოგო -->
-<body>
+
     <header>
-        <img src="./assets/images/logo.svg">
+        <img src="./media/logo.svg">
         <nav>
             <ul>
                 <li><a href="#!">პროდუქცია</a></li>
@@ -19,66 +18,66 @@
             </ul>
         </nav>
     </header>
-   <div>
-       <section>
+    <!-- start of hero content -->
+   <div class="hero-content">
+       <section class="hero-text">
            <h1>იტალიური სამზარეულო</h1>
-           <p>განუმეორებელი კერძების ასორტიმენტი იტალიური სამზარეულოდან</p>
+           <p>განუმეორებელი კერძების ასორტიმენტი</p>
+           <p>იტალიური სამზარეულოდან</p>
            <a href="#!"></a>
-           <img src="./media/main.jpg">
+           <img src="./assets/images/MainPic.png" class="hero-image">
+           <button type="button" class = "Hero-button">ვრცლად</button>
        </section>
        <a href="#!">დაუყევი საიტს</a>
+       <img class="scroll" src="./media/Arrow.png">
 
    </div> 
-           <section>
-               <ul>
+           <section class="menu">
+               <h2 class="menu-title">იტალიური პასტა</h2>
+               <ul class="menu_ul">
                    <li>
-                        <img src="/assets/images/1.png" alt="ალა მატრიჩიანა">
+                        <img class="menu_img" src="/assets/images/1.png" alt="ალა მატრიჩიანა">
                         <h4>სპაგეტი ალა მატრიჩიანა</h2>
                         <p>ტომატი,ხახვი,პარმაზანი,ბაზელიკი</p>
+                        <a class="menu_buttons" href="#!">დამატება</a>
 
                    </li>
 
                     <li>
-                        <img src="/assets/images/2.png" alt='სპაგეტი ხორცის სოუსით'>
+                        <img class="menu_img" src="/assets/images/2.png" alt='სპაგეტი ხორცის სოუსით'>
                         <h4>სპაგეტი ხორცის სოუსით</h4>
                         <p>ღვინო , ნიორი,ხახვი,ფარში,სპაგეტი</p>
+                        <a class="menu_buttons" href="#!">დამატება</a>
  
                     </li>
                 
+
                     <li>
-                        <img src="/assets/images/2.png" alt='სპაგეტი ხორცის სოუსით'>
-                        <h4>სპაგეტი ხორცის სოუსით</h4>
-                        <p>ღვინო , ნიორი,ხახვი,ფარში,სპაგეტი</p>
-     
-                    </li>
-                    <li>
-                        <img src="/assets/images/3.png" alt="სპაგეტი ჩერით">
+                        <img class="menu_img" src="/assets/images/3.png" alt="სპაგეტი ჩერით">
                         <h4>სპაგეტი ჩერით</h4>
                         <p>სპაგეტი,პომიდორი,სატაცური,ბაზილიკი,ყველი,ნიორი</p>
+                        <a class="menu_buttons" href="#!">დამატება</a>
                             
          
                     </li>
-                    <li>
-                        <img src="/assets/images/3.png" alt="სპაგეტი ჩერით">
-                        <h4>სპაგეტი ჩერით</h4>
-                        <p>სპაგეტი,პომიდორი,სატაცური,ბაზილიკი,ყველი,ნიორი</p>
-                                
-             
-                        </li>
+               
                      <li>
-                        <img src="assets/images/4.png" alt="სპაგეტი ზეთისხილით">
+                        <img class="menu_img" src="assets/images/4.png" alt="სპაგეტი ზეთისხილით">
                         <h4>სპაგეტი ზეთისხილით</h4>
-                        <p>პომიდორი,ნიორი,ზეთი,ზეთისხილი,რეჰანი</p>   
+                        <p>პომიდორი,ნიორი,ზეთი,ზეთისხილი,რეჰანი</p>  
+                        <a class="menu_buttons" href="#!">დამატება</a> 
                      </li>    
                      <li>
-                        <img src="assets/images/5.png" alt="პაგეტი სოკოთი"> 
+                        <img class="menu_img" src="assets/images/5.png" alt="პაგეტი სოკოთი"> 
                         <h4>სპაგეტი სოკოთი</h4>
                         <p>სოკო,ქინძი,მარილი,პილპილი,ყველი</p> 
+                        <a class="menu_buttons" href="#!">დამატება</a>
                     </li>  
                     <li>
-                        <img src="assets/images/6.png" alt='სპაგეტი "კარბონარა"'>
+                        <img class="menu_img" src="assets/images/6.png" alt='სპაგეტი "კარბონარა"'>
                         <h4>სპაგეტი კარბონარა</h4>
                         <p>სპაგეტი,კვერცხი,არაჟანი,ზეთი,ბეკონი,ყველი</p>
+                        <a class="menu_buttons" href="#!">დამატება</a>
 
                     </li>
                    
@@ -90,19 +89,17 @@
 
    <footer>
        <div>
-           <address>მიცკევიჩის #7ა,პირველი სადარბაზო (+995) 595 494 303</address>
+           <address class="address">მიცკევიჩის #7ა,პირველი სადარბაზო   (+995) 595 494 303</address>
        </div>
        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.6480706385933!2d44.78028391547332!3d41.70653248411232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd1b64e24bf%3A0x828533d3e3a015f!2z4YOQ4YOZ4YOQ4YOZ4YOYIOGDruGDneGDoOGDkOGDleGDkOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1566064227759!5m2!1ska!2sge" 
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.6480706385933!2d44.78028391547332!3d41.70653248411232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd1b64e24bf%3A0x828533d3e3a015f!2z4YOQ4YOZ4YOQ4YOZ4YOYIOGDruGDneGDoOGDkOGDleGDkOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1566064227759!5m2!1ska!2sge" 
         width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <br>
-            <a href="http://www.credit-card-logos.com/"><img alt="Credit Card Logos" title="Credit Card Logos" src="http://www.credit-card-logos.com/images/visa_credit-card-logos/visa_mastercard_logo_6.gif" width="102" height="32" border="0" /></a>
-        </div>
+        <div class="logos">
+            <img class="icons" src="./assets/images/academy-logo.png">
+            <img class="icons" src="./assets/images/SocialIcons.png">
+            <img class="icons" src="./assets/images/Cards.png">
+        
+        </div>  
 
    </footer>
 
