@@ -7,13 +7,18 @@
 body{
     max-width:1084px;
     margin:0 auto;
+    overflow-x:hidden; 
+   
     
     
 }
 
 h1{
     font-size: 50px;
+    
+
 }
+
 header{
     display:flex;
     justify-content: space-between;
@@ -21,6 +26,9 @@ header{
     align-items: center;
     
 }
+
+
+
 ul{
     width: 214px;
     display:flex;
@@ -47,15 +55,13 @@ a:hover{
 
     
 }
-/*
-postions -  default is static , relative , absolute , sticky
-*/
+
 .hero-content::before{
     content:'';
     display: block;
     position:absolute;
     top:60px;
-    bottom:0;
+    bottom:-1px;
     left:0;
     right:0;
     background-color: #181818;
@@ -65,14 +71,26 @@ postions -  default is static , relative , absolute , sticky
 
 }
 
-.hero-text{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    color:#fff;
-    justify-content: space-around;
-
+.hero-content::after{
+    content: url(../../media/Basil1.png);
+    position:absolute;
+    z-index: 1;
+    right: -905px;
+    bottom: -390px;
 }
+
+.hero-text{
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    color:#fff;   
+}
+
+
+
+
 
 .hero-image{
     position:absolute;
@@ -93,7 +111,7 @@ postions -  default is static , relative , absolute , sticky
     width: 164px;
     height:46px;
     border-radius: 8px;
-    /* padding:15px 45px; */
+    
     margin: 30px 0 30px;
 	line-height: 22px;
     
@@ -105,22 +123,31 @@ postions -  default is static , relative , absolute , sticky
     transition:300ms color ease;
 }
 
-.scroll {
-	margin: 0 auto;
+.scroll_txt{color: #FFF;
+    margin-top: 90px;
+
+}
+
+.scroll{
+     margin: 0 auto;
 	width: 17px;
 	height: 10px;
-	margin-top: 15px;}
+	margin-top: 10px;
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
 
 
 .menu{
 	background-color: #FFF;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1084px;
-    height: 1135px;
-    justify-content: space-between;
-    
+    width: 1084px;   
 }
 
 .menu::before {
@@ -137,12 +164,7 @@ postions -  default is static , relative , absolute , sticky
 	
 }
 
-.menu-title{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-	
-}
+
 
 .menu::after {
 	content: '';
@@ -167,14 +189,16 @@ postions -  default is static , relative , absolute , sticky
 .menu_ul{  display: flex;
     flex-wrap: wrap;
     width: 1084px;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;}
 
-}
+
+
 .menu_img{
-    width: 232px;
-    height: 225px;
+    width: 250px;
+    height: 250px;
 }
-
 
 
 .menu_ul li{
@@ -182,9 +206,27 @@ postions -  default is static , relative , absolute , sticky
     width: 308px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;   
     align-items: center;
+       
+    }
+.list_txt{
+    text-align: center;
+    word-wrap: break-word;
+    display: block;
+    max-width: 274px;
 }
+
+    
+
+
+.menu_ul li:hover{
+    transition : 300ms color ease;
+    box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
+    border-radius: 20px;
+
+}
+
 
 
 .menu_buttons {
@@ -215,7 +257,7 @@ footer{
     position: absolute;
     left:0px;
     width: 100%;
-    height: 557px;
+    height: 600px;
     background-color:  #292C2F;
     display: flex;
     flex-direction: column;
@@ -223,24 +265,37 @@ footer{
     justify-content: space-between;
     
 }
+/*not working*/
+/* footer::before{
+    content: url(../../media/Basil2.png);
+    z-index:-1;
+    position: relative;
+    top: -315px;
+    left: -850px;
+} */
 
 .map{
     width: 1086px;
     border-radius: 15px;
+    margin-bottom:50px;
 }
 
-.logos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-	
-
-
+.icons{display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width:1086px;
 }
-.icons{
+    
+.social{
+    width:100px;
     display:flex;
     justify-content: space-between;
 }
+.visa{
+    margin-bottom: 42px;
+}
+
+
 
 .address{
     color: #f59a63;
@@ -255,6 +310,190 @@ footer{
     margin-top:60px;
 
 }
+
+.instagram:hover path{
+    fill:#BADC58;
+}
+
+.facebook:hover path{
+    fill:#FFF;
+}
+
+.youtube:hover path{
+    fill:#FFF;
+}
+
+
+
+/* @media (max-width:320px){
+
+    header{
+        width:320px;
+        height: 60px;
+    }
+
+    ul{
+        display: none;
+    }
+    
+    .hero-content{
+        height: 300px;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+    
+        
+    }
+    
+    .hero-content::before{
+        content:'';
+        display: block;
+        position:absolute;
+        top:60px;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: #181818;
+        opacity: .6;
+        z-index: -1;
+        
+    
+    }
+
+    .hero-image{
+        position:absolute;
+        z-index:-2;
+        width: 100%;
+        height:auto;
+        height:300px;
+        top:60px;
+        left:0;
+        object-fit: cover;
+    }
+    
+    .hero-text{
+        text-align: center;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-direction: column;
+        color:#fff;   
+    }
+
+    .hero-text h1{
+        font-size: 19px;
+        
+    }
+
+    .hero-text p{
+        font-size:12px;
+    }
+
+    .scroll_txt{display:none;
+    
+    }
+    
+    .scroll{
+        display:none;
+    }
+
+    .Hero-button{
+    
+        font-size : 14px ;
+        background-color: #BADC58;
+        color:#181818;
+        transition:300ms color ease;
+        border:none;
+        width: 133px;
+        height:46px;
+        border-radius: 8px;
+        
+        margin: 30px 0 30px;
+        line-height: 22px;
+        
+    }
+
+
+    .menu{display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        width: 300px;
+        height:2720px;
+        
+
+        
+    }
+
+    .menu_ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 250px;
+    }
+
+    .menu_ul li{
+        width:250px;
+        height: 414px;
+    }
+
+
+
+    footer{
+        position: absolute;
+        left:0px;
+        width: 100%;
+        height: 644px;
+        background-color:  #292C2F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+   
+    
+   
+     
+
+
+
+    .map{
+
+        width:300px;
+        height:290px;
+        border-radius: 15px;
+    }
+
+    .address{
+        color: #f59a63;
+        background-color: #fff;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 300px;
+        height: 60px;
+        /* margin-top:60px; }*/
+    
+    
+
+    /* .icons{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:center;
+        justify-content: space-around;
+        width:300px;
+        height:200px;
+    } */ 
 
    
 
