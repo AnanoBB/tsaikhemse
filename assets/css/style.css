@@ -7,10 +7,7 @@
 body{
     max-width:1084px;
     margin:0 auto;
-    overflow-x:hidden; 
-   
-    
-    
+    overflow-x:hidden;     
 }
 
 h1{
@@ -52,6 +49,8 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    
 
     
 }
@@ -67,7 +66,7 @@ a:hover{
     background-color: #181818;
     opacity: .6;
     z-index: -1;
-    
+ 
 
 }
 
@@ -78,6 +77,8 @@ a:hover{
     right: -905px;
     bottom: -390px;
 }
+
+
 
 .hero-text{
     text-align: center;
@@ -102,7 +103,7 @@ a:hover{
     object-fit: cover;
 }
 .Hero-button{
-    
+    text-align: center;
     font-size : 14px ;
     background-color: #BADC58;
     color:#181818;
@@ -111,11 +112,12 @@ a:hover{
     width: 164px;
     height:46px;
     border-radius: 8px;
-    
     margin: 30px 0 30px;
-	line-height: 22px;
+    line-height: 22px;
+    
     
 }
+
 
 .Hero-button:hover{
     color:#BADC58;
@@ -244,15 +246,6 @@ h2{
 
 }
 
-.menu_buttons:active{
-    transform:translateY(4px)
-}
-
-
-
-
-
-
 footer{
     position: absolute;
     left:0px;
@@ -265,19 +258,39 @@ footer{
     justify-content: space-between;
     
 }
-/*not working*/
-/* footer::before{
-    content: url(../../media/Basil2.png);
-    z-index:-1;
-    position: relative;
-    top: -315px;
-    left: -850px;
-} */
+
+
+
+.address{
+    color: #f59a63;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1086px;
+    height: 60px;
+    margin-top:80px;
+
+}
+
+.number{
+    color:#f59a63;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:45px;
+
+    
+    
+}
 
 .map{
     width: 1086px;
+    height: 290px;
     border-radius: 15px;
     margin-bottom:50px;
+    margin-top: 20px;
 }
 
 .icons{display: flex;
@@ -289,26 +302,13 @@ footer{
 .social{
     width:100px;
     display:flex;
+    align-items: center;
     justify-content: space-between;
+
 }
+
 .visa{
     margin-bottom: 42px;
-}
-
-
-
-.address{
-    color: #f59a63;
-    background-color: #fff;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    width: 1086px;
-    height: 60px;
-    margin-top:60px;
-
 }
 
 .instagram:hover path{
@@ -324,178 +324,6 @@ footer{
 }
 
 
-
-/* @media (max-width:320px){
-
-    header{
-        width:320px;
-        height: 60px;
-    }
-
-    ul{
-        display: none;
-    }
-    
-    .hero-content{
-        height: 300px;
-        width: 100%;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-repeat: no-repeat;
-    
-        
-    }
-    
-    .hero-content::before{
-        content:'';
-        display: block;
-        position:absolute;
-        top:60px;
-        bottom:0;
-        left:0;
-        right:0;
-        background-color: #181818;
-        opacity: .6;
-        z-index: -1;
-        
-    
-    }
-
-    .hero-image{
-        position:absolute;
-        z-index:-2;
-        width: 100%;
-        height:auto;
-        height:300px;
-        top:60px;
-        left:0;
-        object-fit: cover;
-    }
-    
-    .hero-text{
-        text-align: center;
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        flex-direction: column;
-        color:#fff;   
-    }
-
-    .hero-text h1{
-        font-size: 19px;
-        
-    }
-
-    .hero-text p{
-        font-size:12px;
-    }
-
-    .scroll_txt{display:none;
-    
-    }
-    
-    .scroll{
-        display:none;
-    }
-
-    .Hero-button{
-    
-        font-size : 14px ;
-        background-color: #BADC58;
-        color:#181818;
-        transition:300ms color ease;
-        border:none;
-        width: 133px;
-        height:46px;
-        border-radius: 8px;
-        
-        margin: 30px 0 30px;
-        line-height: 22px;
-        
-    }
-
-
-    .menu{display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        flex-direction: column;
-        position: relative;
-        width: 300px;
-        height:2720px;
-        
-
-        
-    }
-
-    .menu_ul{
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 250px;
-    }
-
-    .menu_ul li{
-        width:250px;
-        height: 414px;
-    }
-
-
-
-    footer{
-        position: absolute;
-        left:0px;
-        width: 100%;
-        height: 644px;
-        background-color:  #292C2F;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-    
-   
-    
-   
-     
-
-
-
-    .map{
-
-        width:300px;
-        height:290px;
-        border-radius: 15px;
-    }
-
-    .address{
-        color: #f59a63;
-        background-color: #fff;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 300px;
-        height: 60px;
-        /* margin-top:60px; }*/
-    
-    
-
-    /* .icons{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items:center;
-        justify-content: space-around;
-        width:300px;
-        height:200px;
-    } */ 
-
-   
 
 
 
