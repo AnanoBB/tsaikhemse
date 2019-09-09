@@ -59,7 +59,7 @@ a:hover{
     content:'';
     display: block;
     position:absolute;
-    height: 300px;
+    
     top:60px;
     bottom:-1px;
     left:0;
@@ -332,6 +332,7 @@ footer{
     header{
         height: 60px;
         width: 320px;
+        
     }
 
 
@@ -353,6 +354,7 @@ footer{
     
     .hero-content::before{
         content:'';
+        height: 300px;
         display: block;
         position:absolute;
         top:60px;
