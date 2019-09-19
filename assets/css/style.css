@@ -10,6 +10,13 @@ body{
     overflow-x:hidden;     
 }
 
+.clicked_menu{
+    display: none;
+}
+.burger_lines{
+    display: none;
+}
+
 h1{
     font-size: 50px;
     
@@ -72,7 +79,7 @@ a:hover{
 }
 
 .hero-content::after{
-    content: url(../../media/Basil1.png);
+    /* content: url(./assets/images/basil); */
     position:absolute;
     z-index: 1;
     right: -905px;
@@ -500,7 +507,41 @@ footer{
         flex-direction: column-reverse;
     }
 
+
+
+
+    .burger_lines{
+        position: absolute;
+            display: flex;
+             flex-direction: column;
+             cursor: pointer;
+             right:5%;
+             top:5%;
+             transform: translate(-5%,-50%);
+    }  
+
+    .line{
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color:black;
+        border-radius: 1px;
+        transition: 0.3s ease;
+        margin: 3px;
+    }
    
+    .clicked_menu{
+        position:absolute;
+        width: 320px;
+        height:508px;
+
+    }
+
+   
+
+
+
 
 }
 
