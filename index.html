@@ -18,7 +18,7 @@
                 </ul>
             </nav>
             <section class="clicked_menu" id="clickedMenu">
-                <div class="burger_menu">
+                <div style="display: none;" class="burger_menu" id="drop-content">
                     <ul class="burger_ul">
                         <li><a href="#!" class="burger_li">მთავარი</a></li>
                         <li><a href="#!" class="burger_li">პროდუქცია</a></li>
@@ -51,7 +51,7 @@
             </section>
 
             
-                <div class="burger_lines" id="activeB">
+                <div onclick="show_hide()" class="burger_lines" id="activeB">
                     <div class="line" id="line1"></div>
                     <div class="line" id="line2"></div>
                     <div class="line" id="line3"></div>

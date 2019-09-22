@@ -339,6 +339,7 @@ footer{
     header{
         height: 60px;
         width: 320px;
+        position: relative;
         
     }
 
@@ -433,9 +434,6 @@ footer{
         width: 300px;
         height:2720px;
         margin-left: 10px;
-        
-
-        
     }
 
 
@@ -512,16 +510,18 @@ footer{
 
     .burger_lines{
         position: absolute;
-            display: flex;
-             flex-direction: column;
-             cursor: pointer;
-             right:5%;
-             top:5%;
-             transform: translate(-5%,-50%);
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        right:5%;
+        top:5%;
+        transform: translate(-5%,-50%);
+        margin-top:25px;
     }  
 
     .line{
-        position: relative;
         display: block;
         width: 30px;
         height: 3px;
@@ -539,7 +539,63 @@ footer{
     }
 
    
+    .clicked_menu{
+        display: block;
+    }
+    .burger_lines{
+        display: block;
+    }
 
+    .burger_menu{
+        background-color: #181818;
+        display: flex;
+        text-decoration: none;
+        height: 508px;
+        margin-top: 284px;
+        width: 320px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: space-between;
+        align-items: center; */
+        position: relative;
+        z-index:2; 
+              
+        
+    }
+    
+    .burger_ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 400px;
+        margin-left:50px;
+        border-bottom: #292C2F 2px solid;
+        padding-bottom: 15px;
+        
+    }
+
+    .burger_li{
+        color:#FFF;
+        
+    }
+   
+    .burger_social{
+        width: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left:85px;
+        position: relative;
+        z-index: 5;
+        bottom:50px;
+        
+        
+    }
+
+    .burger_social path{
+        fill:#FFF;
+    }
 
 
 
