@@ -79,7 +79,7 @@ a:hover{
 }
 
 .hero-content::after{
-    /* content: url(./assets/images/basil); */
+    content: url(../images/Basil1.png);
     position:absolute;
     z-index: 1;
     right: -905px;
@@ -269,6 +269,14 @@ footer{
     
 }
 
+footer::before{
+        content: url(../../assets/images/Basilfoot.png);
+        z-index: -1;
+        position: absolute;
+        top: -315px;
+        left: -850px;
+
+}
 
 
 .address{
@@ -376,6 +384,10 @@ footer{
     
     }
 
+    .hero-content::after{
+        display: none;
+    }
+
     .hero-image{
         position:absolute;
         z-index:-2;
@@ -474,6 +486,10 @@ footer{
         
     }
 
+    footer::before{
+        display: none;
+    }
+
     .address{
         width:300px;
         height:60px;
@@ -546,6 +562,27 @@ footer{
         display: block;
     }
 
+    #line1{
+        transform: translateY(-3px);
+    }
+
+    #line3{transform: translateY(3px);
+    }
+
+    .active #line1 {
+        transform: translateY(6px) rotateZ(-45deg);
+    }
+
+    .active #line3 {
+        transform: translateY(-5px) rotate(45deg);
+    }
+
+    .active #line2 {
+        opacity: 0;
+    }
+
+
+
     .burger_menu{
         background-color: #181818;
         display: flex;
@@ -555,8 +592,6 @@ footer{
         width: 320px;
         flex-direction: column;
         flex-wrap: wrap;
-        /* justify-content: space-between;
-        align-items: center; */
         position: relative;
         z-index:2; 
               
@@ -599,8 +634,111 @@ footer{
 
 
 
+
 }
 
+@media (min-width: 321px) and (max-width:768px){
+    header{
+        height: 60px;
+        width:768px;
+        
+    }
+
+    .hero-content{
+        height:394px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+
+    }
+
+   
+
+    .hero-content::before{
+        height:394px;
+        
+    }
+
+    .hero-content::after{
+        content: url(../images/Basil1.png);
+        position:absolute;
+        z-index: 1;
+        right: -905px;
+        bottom: 181px;
+    }
+
+    .hero-image{
+        height: 394px;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .hero-text{
+        margin-top:150px;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        width: 702px;
+        height:1462px;
+        margin-left: 30px;
+    }
+
+    .menu::after{
+        position: absolute;
+    }
+
+
+    .menu_ul{
+        height:1400px;
+        width:740px;
+        margin:0 0;
+
+
+    }
+
+    .menu_ul li{
+       display:flex;
+       flex-wrap:wrap;
+       justify-content: space-around;
+       align-items: center;
+       margin-right: 20px;
+    }
+
+    footer{
+        position:relative;
+
+    }
+
+    .address{
+        width:702px;
+        height:60px;
+
+    }
+
+    .map{
+        width:702px;
+        height:290px;
+    }
+
+   .icons{
+       width:768px;
+       justify-content: space-around;
+   }
+
+
+}
 
 
 
