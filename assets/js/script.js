@@ -3,9 +3,7 @@ console.log(add_button);
 
 let scr = document.getElementById("more");
 
-scr.addEventListener('click',function(){alert()});
 
-// add_button.addEventListener("click",function(){alert()});
 
 for (let i = 0; i < add_button.length;i++){
     add_button[i].addEventListener('click',function(){
@@ -35,6 +33,7 @@ function show_hide(){
   document.querySelector( "#activeB" ).addEventListener( "click", function() {
     this.classList.toggle( "active" );
   });  
+
 
   document.addEventListener("DOMContentLoaded", function () {
     var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
